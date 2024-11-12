@@ -12,7 +12,7 @@ const projectsData = [
     description: "Only using grid and flexbox for layout",
     image: "/images/projects/project4.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/pandedeva/website-clothing-brand",
     previewUrl: "/",
   },
   {
@@ -21,25 +21,25 @@ const projectsData = [
     description: "Web app for searching animes",
     image: "/images/projects/project5.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/pandedeva/anime-list",
     previewUrl: "/",
   },
-  {
-    id: 3,
-    title: "UI E-commerce Application",
-    description: "Slicing design from figma",
-    image: "/images/projects/project3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
+  // {
+  //   id: 3,
+  //   title: "UI E-commerce Application",
+  //   description: "Slicing design from figma",
+  //   image: "/images/projects/project3.png",
+  //   tag: ["All", "Web"],
+  //   gitUrl: "/",
+  //   previewUrl: "/",
+  // },
   {
     id: 4,
     title: "Recipe App",
     description: "Web app for searching recipes",
     image: "/images/projects/project1.png",
     tag: ["All", "Mobile", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/pandedeva/recipe-app-vite",
     previewUrl: "/",
   },
   {
@@ -48,7 +48,7 @@ const projectsData = [
     description: "Slicing design from figma and responsive",
     image: "/images/projects/project2.png",
     tag: ["All", "Mobile", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/pandedeva/slicing-page",
     previewUrl: "/",
   },
   {
@@ -57,7 +57,7 @@ const projectsData = [
     description: "Slicing design from figma and responsive",
     image: "/images/projects/project6.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/pandedeva/epictetus",
     previewUrl: "/",
   },
 ];
@@ -110,7 +110,13 @@ const ProjectSection = () => {
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.3, delay: index * 0.2 }}
           >
-            <ProjectCard {...project} imgUrl={project.image} />
+            <ProjectCard
+              description={project.description}
+              title={project.title}
+              imgUrl={project.image}
+              gitUrl={project.gitUrl}
+              previewUrl={project.image}
+            />
           </motion.li>
         ))}
       </ul>
