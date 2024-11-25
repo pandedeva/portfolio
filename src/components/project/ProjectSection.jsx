@@ -24,15 +24,15 @@ const projectsData = [
     gitUrl: "https://github.com/pandedeva/anime-list",
     previewUrl: "/",
   },
-  // {
-  //   id: 3,
-  //   title: "UI E-commerce Application",
-  //   description: "Slicing design from figma",
-  //   image: "/images/projects/project3.png",
-  //   tag: ["All", "Web"],
-  //   gitUrl: "/",
-  //   previewUrl: "/",
-  // },
+  {
+    id: 3,
+    title: "Movie-app",
+    description: "Slicing design from figma",
+    image: "/images/projects/project7.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/pandedeva/movie-app-nextjs",
+    previewUrl: "/",
+  },
   {
     id: 4,
     title: "Recipe App",
@@ -82,7 +82,7 @@ const ProjectSection = () => {
   };
 
   return (
-    <div ref={ref}>
+    <div ref={ref} id="projects">
       <h1 className="text-center text-4xl font-bold my-4">My Projects</h1>
       <div className="flex flex-row justify-center items-center gap-4 py-6">
         <ProjectTag

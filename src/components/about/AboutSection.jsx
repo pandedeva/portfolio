@@ -13,7 +13,8 @@ const TAB_DATA = [
         <li>Javascript</li>
         <li>React</li>
         <li>Next</li>
-        <li>Tailwind</li>
+        <li>Figma</li>
+        <li>PhotoShop</li>
       </ul>
     ),
   },
@@ -36,7 +37,8 @@ const TAB_DATA = [
         <li>BNN Provinsi Bali as IT Support</li>
         <li>JAS IT staff at I Gusti Ngurah Rai International Airport</li>
         <li>
-          JAS Ground Handling staff at I Gusti Ngurah Rai International Airport
+          JAS Ground Handling staff & Admin at I Gusti Ngurah Rai International
+          Airport
         </li>
       </ul>
     ),
@@ -54,7 +56,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section>
+    <section id="about">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-24">
         <Image
           alt="about"
